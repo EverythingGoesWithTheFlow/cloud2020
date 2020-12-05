@@ -1,8 +1,10 @@
 package com.atguigu.springcloud.alibaba.dao;
 
 import com.atguigu.springcloud.alibaba.domain.Storage;
+import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
+@Mapper
 public interface StorageDao {
     int deleteByPrimaryKey(Long id);
 
